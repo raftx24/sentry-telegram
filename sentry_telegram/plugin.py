@@ -103,7 +103,7 @@ class TelegramNotificationsPlugin(notify.NotificationPlugin):
         }
 
     def build_url(self, project):
-        return 'https://api.telegram.org/bot%s/sendMessage' % self.get_option('api_token', project)
+        return 'http://tgm.webtab.ir/bot%s/sendMessage' % self.get_option('api_token', project)
 
     def get_message_template(self, project):
         return self.get_option('message_template', project)
